@@ -1,65 +1,77 @@
-import Image from "next/image";
+import { Hero } from "@/components/TourCard";
+import { CTAGroup } from "@/components/CTAButton";
+import { CruiseSnapshot, CruiseConfidenceGuide, BestToursByTraveller } from "@/components/CruiseSections";
+import { WildlifeHighlights } from "@/components/WildlifeHighlights";
+import { ComparisonTable } from "@/components/ComparisonTable";
+import { TourCard } from "@/components/TourCard";
+import { InlineLinks } from "@/components/ThemePageLayout";
+import { TOURS } from "@/data/tours";
+import { IMAGES, SITE, THEME_LINKS } from "@/data/site";
+import { SchemaMarkup } from "@/components/SchemaMarkup";
+import { breadcrumbSchema } from "@/lib/schema";
+import { tourProductSchema } from "@/lib/schema";
 
-export default function Home() {
+export default function HomePage() {
+  const featured = TOURS.slice(0, 6);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      <SchemaMarkup
+        data={[
+          breadcrumbSchema([{ name: "Home", url: SITE.url }]),
+          ...featured.map((t) => tourProductSchema(t)),
+        ]}
+      />
+      <Hero
+        title="Sitka Shore Excursions for Cruise Passengers"
+        subtitle="Bears, bald eagles, totem poles, temperate rainforest, and Sitka Sound marine wildlife — experience Alaska's most captivating wildlife port on Baranof Island."
+        image={IMAGES.hero.src}
+        imageAlt={IMAGES.hero.alt}
+      >
+        <CTAGroup />
+      </Hero>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+        <section className="prose-sitka max-w-3xl">
+          <h2 className="font-serif text-2xl lg:text-3xl text-forest-900 mb-4">
+            Alaska&apos;s Wildlife, Rainforest &amp; Coastal Port
+          </h2>
+          <p className="text-forest-700 leading-relaxed mb-4">
+            Nestled between mountains and sea on Baranof Island, Sitka is one of Alaska&apos;s most scenic and
+            culturally rich ports of call. Deep ties to Tlingit heritage and Russian colonial history meet dramatic
+            coastal scenery, abundant wildlife, and a laid-back atmosphere perfect for your cruise port day.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+          <p className="text-forest-700 leading-relaxed">
+            From Fortress of the Bear and the Alaska Raptor Center to totem poles at Sitka National Historical Park
+            and whale watching in Sitka Sound, every excursion showcases the wild heart of Southeast Alaska.
+          </p>
+        </section>
+
+        <CruiseSnapshot />
+        <WildlifeHighlights />
+
+        <section>
+          <h2 className="font-serif text-2xl lg:text-3xl text-forest-900 mb-2">Featured Sitka Shore Excursions</h2>
+          <p className="text-forest-700 mb-8">Curated tours for cruise passengers with clear confidence guidance.</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {featured.map((tour) => (
+              <TourCard key={tour.id} tour={tour} />
+            ))}
+          </div>
+          <div className="mt-8">
+            <CTAGroup />
+          </div>
+        </section>
+
+        <BestToursByTraveller />
+        <ComparisonTable />
+        <CruiseConfidenceGuide />
+
+        <section>
+          <h2 className="font-serif text-2xl text-forest-900 mb-4">Explore by Tour Theme</h2>
+          <InlineLinks links={THEME_LINKS.map((l) => ({ href: l.href, label: l.label }))} />
+        </section>
+      </div>
+    </>
   );
 }
