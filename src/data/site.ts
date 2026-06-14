@@ -85,4 +85,8 @@ export const IMAGES = {
     src: "/images/sea-otter.jpg",
     alt: "Sea otter floating on its back in the calm waters of Sitka Sound Alaska",
   },
+  whales: {
+    src: "/images/sitka-whales.jpg",
+    alt: "Humpback whales breaching with snow-capped mountains in Sitka Sound Alaska",
+  },
 } as const;

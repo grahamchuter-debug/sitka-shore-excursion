@@ -156,8 +156,8 @@ export const TOURS: Tour[] = [
       "Weather and wildlife activity can affect timing. Choose departures with ample buffer before all-aboard. Medium Cruise Confidence — plan carefully on short port days.",
     priceFrom: 259,
     themes: ["wildlife", "scenic"],
-    image: IMAGES.otter.src,
-    imageAlt: IMAGES.otter.alt,
+    image: IMAGES.whales.src,
+    imageAlt: IMAGES.whales.alt,
   },
   {
     id: "premium-scenic-sitka",
