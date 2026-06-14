@@ -54,31 +54,35 @@ export interface Tour {
 
 export const IMAGES = {
   hero: {
-    src: "/images/hero-sitka-bears.png",
+    src: "/images/hero-sitka-bears.jpg",
     alt: "Two brown bears fishing at a river in Sitka Alaska with a seagull on mossy rocks",
   },
   bear: {
-    src: "/images/sitka-bear-tour.png",
-    alt: "Brown bear at Fortress of the Bear sanctuary with misty rainforest mountain in Sitka Alaska",
+    src: "/images/fortress-of-the-bear.jpg",
+    alt: "Brown bear standing on a rocky shoreline at Fortress of the Bear in Sitka Alaska",
   },
   eagle: {
-    src: "/images/sitka-eagle.png",
-    alt: "Two bald eagles perched on a Sitka spruce tree in the Alaskan rainforest",
+    src: "/images/raptor-center.jpg",
+    alt: "Bald eagle with wings spread over water at the Alaska Raptor Center Sitka",
   },
   totem: {
-    src: "/images/sitka-totem.png",
-    alt: "Tlingit totem pole before a snow-capped mountain at Sitka National Historical Park",
+    src: "/images/sitka-national-park.jpg",
+    alt: "Sitka National Historical Park entrance sign with carved totem bird posts",
+  },
+  nationalPark: {
+    src: "/images/sitka-national-park.jpg",
+    alt: "Sitka National Historical Park entrance sign with carved totem bird posts",
   },
   coastal: {
-    src: "/images/sitka-totem.png",
-    alt: "Snow-capped mountain and coastal rainforest scenery near Sitka Alaska",
+    src: "/images/sitka-totem.jpg",
+    alt: "Tlingit totem pole before a snow-capped mountain near Sitka Alaska",
   },
   rainforest: {
-    src: "/images/sitka-bear-tour.png",
+    src: "/images/sitka-bear-tour.jpg",
     alt: "Misty evergreen rainforest on Baranof Island near Sitka Alaska",
   },
   otter: {
-    src: "/images/hero-sitka-bears.png",
+    src: "/images/hero-sitka-bears.jpg",
     alt: "River and coastal wildlife habitat in Sitka Sound Alaska",
   },
 } as const;

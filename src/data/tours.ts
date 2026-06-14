@@ -31,8 +31,8 @@ export const TOURS: Tour[] = [
       "This tour is designed with cruise schedules in mind and typically returns well before all-aboard. Confirm your ship's departure time with your guide at check-in and allow buffer time for tender operations if applicable.",
     priceFrom: 155,
     themes: ["wildlife", "bear", "raptor", "totem", "scenic", "family"],
-    image: IMAGES.bear.src,
-    imageAlt: IMAGES.bear.alt,
+    image: IMAGES.nationalPark.src,
+    imageAlt: "Best of Sitka tour covering Fortress of the Bear, Raptor Center, and Sitka National Historical Park",
   },
   {
     id: "fortress-of-the-bear",
@@ -124,8 +124,8 @@ export const TOURS: Tour[] = [
       "Self-paced options allow you to control timing. If joining a guided tour, confirm return time against your ship's all-aboard deadline.",
     priceFrom: 55,
     themes: ["totem", "rainforest", "scenic", "family"],
-    image: IMAGES.totem.src,
-    imageAlt: IMAGES.totem.alt,
+    image: IMAGES.nationalPark.src,
+    imageAlt: IMAGES.nationalPark.alt,
   },
   {
     id: "whale-watching-marine-wildlife",
