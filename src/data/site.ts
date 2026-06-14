@@ -74,15 +74,15 @@ export const IMAGES = {
     alt: "Sitka National Historical Park entrance sign with carved totem bird posts",
   },
   coastal: {
-    src: "/images/sitka-totem.jpg",
-    alt: "Tlingit totem pole before a snow-capped mountain near Sitka Alaska",
+    src: "/images/mount-edgecumbe.jpg",
+    alt: "Mount Edgecumbe volcano and forested islands in Sitka Sound Alaska",
   },
   rainforest: {
-    src: "/images/sitka-bear-tour.jpg",
-    alt: "Misty evergreen rainforest on Baranof Island near Sitka Alaska",
+    src: "/images/sitka-rainforest.jpg",
+    alt: "Misty temperate rainforest stream and meadow on Baranof Island near Sitka Alaska",
   },
   otter: {
-    src: "/images/hero-sitka-bears.jpg",
-    alt: "River and coastal wildlife habitat in Sitka Sound Alaska",
+    src: "/images/sea-otter.jpg",
+    alt: "Sea otter floating on its back in the calm waters of Sitka Sound Alaska",
   },
 } as const;

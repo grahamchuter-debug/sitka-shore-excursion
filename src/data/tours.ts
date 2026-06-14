@@ -157,7 +157,7 @@ export const TOURS: Tour[] = [
     priceFrom: 259,
     themes: ["wildlife", "scenic"],
     image: IMAGES.otter.src,
-    imageAlt: "Marine wildlife in Sitka Sound with coastal mountains Alaska",
+    imageAlt: IMAGES.otter.alt,
   },
   {
     id: "premium-scenic-sitka",
@@ -188,7 +188,7 @@ export const TOURS: Tour[] = [
     priceFrom: 139,
     themes: ["scenic", "bear", "totem", "rainforest"],
     image: IMAGES.coastal.src,
-    imageAlt: "Scenic Sitka Sound view with Mount Edgecumbe and coastal rainforest",
+    imageAlt: IMAGES.coastal.alt,
   },
   {
     id: "sitka-scenic-tour",
@@ -219,7 +219,7 @@ export const TOURS: Tour[] = [
     priceFrom: 115,
     themes: ["scenic", "family"],
     image: IMAGES.coastal.src,
-    imageAlt: "Sitka Alaska scenic coastal drive with rainforest views",
+    imageAlt: IMAGES.coastal.alt,
   },
   {
     id: "rainforest-nature-walk",
@@ -251,7 +251,7 @@ export const TOURS: Tour[] = [
     priceFrom: 89,
     themes: ["rainforest", "wildlife", "scenic"],
     image: IMAGES.rainforest.src,
-    imageAlt: "Moss-covered temperate rainforest trail on Baranof Island Sitka",
+    imageAlt: IMAGES.rainforest.alt,
   },
   {
     id: "private-scenic-sitka",
@@ -282,7 +282,7 @@ export const TOURS: Tour[] = [
     priceFrom: 109,
     themes: ["private", "scenic", "family"],
     image: IMAGES.coastal.src,
-    imageAlt: "Private sightseeing tour of Sitka Alaska coastal highlights",
+    imageAlt: IMAGES.coastal.alt,
   },
   {
     id: "private-wildlife-photo-safari",
@@ -314,7 +314,7 @@ export const TOURS: Tour[] = [
     priceFrom: 336,
     themes: ["private", "wildlife", "scenic"],
     image: IMAGES.otter.src,
-    imageAlt: "Private wildlife photo safari boat in Sitka Sound Alaska",
+    imageAlt: IMAGES.otter.alt,
   },
   {
     id: "family-wildlife-adventure",
