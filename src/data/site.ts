@@ -54,8 +54,8 @@ export interface Tour {
 
 export const IMAGES = {
   hero: {
-    src: "https://images.unsplash.com/photo-1589656966895-2f0923797833?w=1920&q=80",
-    alt: "Brown bear in Alaska rainforest near Sitka",
+    src: "/images/hero-sitka-bears.png",
+    alt: "Two brown bears fishing at a river in Sitka Alaska with a seagull on mossy rocks",
   },
   eagle: {
     src: "https://images.unsplash.com/photo-1552728080-8152b789203f?w=1200&q=80",
