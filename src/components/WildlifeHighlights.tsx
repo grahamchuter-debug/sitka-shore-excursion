@@ -6,43 +6,43 @@ const highlights = [
     title: "Brown & Black Bears",
     description:
       "Fortress of the Bear offers reliable close-up viewing of rescued Alaskan bears in naturalized habitats — one of Sitka's signature wildlife experiences.",
-    image: IMAGES.hero.src,
-    alt: "Brown bear in Alaska forest habitat near Sitka",
+    image: IMAGES.bear.src,
+    alt: IMAGES.bear.alt,
   },
   {
     title: "Bald Eagles & Raptors",
     description:
       "The Alaska Raptor Center rehabilitates bald eagles, owls, and falcons. Watch flight training and meet birds of prey up close.",
     image: IMAGES.eagle.src,
-    alt: "Bald eagle at Alaska Raptor Center Sitka",
+    alt: IMAGES.eagle.alt,
   },
   {
     title: "Totem Poles & Tlingit Culture",
     description:
       "Sitka National Historical Park preserves dozens of carved totem poles along rainforest trails — living art of the Tlingit people.",
     image: IMAGES.totem.src,
-    alt: "Tlingit totem poles Sitka National Historical Park",
+    alt: IMAGES.totem.alt,
   },
   {
     title: "Sea Otters & Marine Life",
     description:
       "Sitka Sound teems with sea otters, whales, porpoises, and puffins against the dramatic backdrop of Mount Edgecumbe.",
     image: IMAGES.otter.src,
-    alt: "Sea otter and marine wildlife in Sitka Sound",
+    alt: IMAGES.otter.alt,
   },
   {
     title: "Temperate Rainforest",
     description:
       "Walk moss-draped old-growth trails on Baranof Island — one of the world's largest temperate rainforests.",
     image: IMAGES.rainforest.src,
-    alt: "Temperate rainforest trail Baranof Island Sitka",
+    alt: IMAGES.rainforest.alt,
   },
   {
     title: "Coastal Scenery",
     description:
       "Volcanic Mount Edgecumbe, Sitka Sound, and Pacific-facing vistas make Sitka one of Alaska's most photogenic ports.",
     image: IMAGES.coastal.src,
-    alt: "Sitka Sound coastal mountains and misty Alaska scenery",
+    alt: IMAGES.coastal.alt,
   },
 ];
 

@@ -31,8 +31,8 @@ export const TOURS: Tour[] = [
       "This tour is designed with cruise schedules in mind and typically returns well before all-aboard. Confirm your ship's departure time with your guide at check-in and allow buffer time for tender operations if applicable.",
     priceFrom: 155,
     themes: ["wildlife", "bear", "raptor", "totem", "scenic", "family"],
-    image: IMAGES.hero.src,
-    imageAlt: "Brown bear at Fortress of the Bear near Sitka Alaska",
+    image: IMAGES.bear.src,
+    imageAlt: IMAGES.bear.alt,
   },
   {
     id: "fortress-of-the-bear",
@@ -62,8 +62,8 @@ export const TOURS: Tour[] = [
       "Short duration makes this one of the most schedule-friendly Sitka options. Pair with a second short tour only if your port time exceeds five hours.",
     priceFrom: 79,
     themes: ["wildlife", "bear", "family"],
-    image: IMAGES.hero.src,
-    imageAlt: "Alaskan brown bear at Fortress of the Bear rescue center Sitka",
+    image: IMAGES.bear.src,
+    imageAlt: IMAGES.bear.alt,
   },
   {
     id: "alaska-raptor-center",
@@ -94,7 +94,7 @@ export const TOURS: Tour[] = [
     priceFrom: 65,
     themes: ["wildlife", "raptor", "family"],
     image: IMAGES.eagle.src,
-    imageAlt: "Bald eagle at Alaska Raptor Center Sitka",
+    imageAlt: IMAGES.eagle.alt,
   },
   {
     id: "sitka-national-historical-park",
@@ -125,7 +125,7 @@ export const TOURS: Tour[] = [
     priceFrom: 55,
     themes: ["totem", "rainforest", "scenic", "family"],
     image: IMAGES.totem.src,
-    imageAlt: "Tlingit totem poles along rainforest trail Sitka National Historical Park",
+    imageAlt: IMAGES.totem.alt,
   },
   {
     id: "whale-watching-marine-wildlife",

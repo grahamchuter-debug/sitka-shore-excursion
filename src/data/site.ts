@@ -57,24 +57,28 @@ export const IMAGES = {
     src: "/images/hero-sitka-bears.png",
     alt: "Two brown bears fishing at a river in Sitka Alaska with a seagull on mossy rocks",
   },
+  bear: {
+    src: "/images/sitka-bear-tour.png",
+    alt: "Brown bear at Fortress of the Bear sanctuary with misty rainforest mountain in Sitka Alaska",
+  },
   eagle: {
-    src: "https://images.unsplash.com/photo-1552728080-8152b789203f?w=1200&q=80",
-    alt: "Bald eagle soaring over Alaska coastal wilderness",
+    src: "/images/sitka-eagle.png",
+    alt: "Two bald eagles perched on a Sitka spruce tree in the Alaskan rainforest",
   },
   totem: {
-    src: "https://images.unsplash.com/photo-1596484552834-086affc358ae?w=1200&q=80",
-    alt: "Tlingit totem poles at Sitka National Historical Park",
+    src: "/images/sitka-totem.png",
+    alt: "Tlingit totem pole before a snow-capped mountain at Sitka National Historical Park",
   },
   coastal: {
-    src: "https://images.unsplash.com/photo-1506905925346-3b393f2d72c5?w=1200&q=80",
-    alt: "Sitka Sound coastal mountains and misty Alaska waters",
+    src: "/images/sitka-totem.png",
+    alt: "Snow-capped mountain and coastal rainforest scenery near Sitka Alaska",
   },
   rainforest: {
-    src: "https://images.unsplash.com/photo-1448375249986-d394391cb12c?w=1200&q=80",
-    alt: "Temperate rainforest trail on Baranof Island near Sitka",
+    src: "/images/sitka-bear-tour.png",
+    alt: "Misty evergreen rainforest on Baranof Island near Sitka Alaska",
   },
   otter: {
-    src: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=1200&q=80",
-    alt: "Sea otter floating in Sitka Sound Alaska",
+    src: "/images/hero-sitka-bears.png",
+    alt: "River and coastal wildlife habitat in Sitka Sound Alaska",
   },
 } as const;
